@@ -6,7 +6,7 @@
 <title>Personal Academic Portfolio</title>
 <style>
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,67 +14,79 @@
 
   header {
     background: #333;
-    color: #fff;
-    padding: 10px 0;
+    color: white;
+    padding: 20px;
     text-align: center;
   }
 
   nav {
-    display: flex;
-    justify-content: space-around;
     background: #444;
     padding: 10px 0;
   }
 
-  nav a {
-    color: #fff;
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul li {
+    padding: 0 20px;
+  }
+
+  nav ul li a {
+    color: white;
     text-decoration: none;
-    padding: 0 10px;
+    font-weight: bold;
   }
 
-  nav a:hover {
-    background: #555;
+  nav ul li a:hover {
+    color: #dddddd;
   }
 
-  .container {
+  .section {
     padding: 20px;
+    text-align: center;
   }
 
   footer {
     background: #333;
-    color: #fff;
+    color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
   }
-
-  /* Additional styles can be added here */
 </style>
 </head>
 <body>
 
 <header>
-  <h1>Your Portfolio Name</h1>
+  <h1>Your Name</h1>
 </header>
 
 <nav>
-  <a href="#">Biography</a>
-  <a href="#">Research Highlights</a>
-  <a href="#">CV</a>
+  <ul>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#research">Research Highlights</a></li>
+    <li><a href="/path-to-your-cv.pdf" target="_blank">CV</a></li>
+  </ul>
 </nav>
 
-<div class="container">
-  <!-- Content goes here -->
+<div id="about" class="section">
   <h2>About Me</h2>
-  <p>Description about yourself and your research work.</p>
-  
-  <!-- You can add more sections here -->
+  <p>This is a section about you. You can write your biography or other information here. You can also include your photo by using an img tag.</p>
+</div>
+
+<div id="research" class="section">
+  <h2>Research Highlights</h2>
+  <p>Describe some of the research work you have done. Maybe include some images or charts if you have any.</p>
 </div>
 
 <footer>
-  <p>Copyright © 2024 Your Name. All rights reserved.</p>
+  <p>Copyright © Your Name. All Rights Reserved.</p>
 </footer>
 
 </body>
